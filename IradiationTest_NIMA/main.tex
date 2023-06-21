@@ -1,0 +1,192 @@
+%% 
+%% Copyright 2007-2020 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%% 
+%%
+%% $Id: elsarticle-template-num.tex 190 2020-11-23 11:12:32Z rishi $
+%%
+%%
+%% \documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+\documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+\usepackage{lineno}
+
+\journal{Nuclear Physics A}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \affiliation{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%% \fntext[label3]{}
+
+\title{Radiation hardness of the TGC frontend electronics for the ATLAS experiment at HL-LHC}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \affiliation[label1]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%%
+%% \affiliation[label2]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+
+\author{Yuya Ohsumi}
+
+%\affiliation{organization={},%Department and Organization
+%            addressline={}, 
+%            city={},
+%            postcode={}, 
+%            state={},
+%            country={}}
+
+\begin{abstract}
+\begin{linenumbers}
+LHC-ATLAS is the energy frontier experiment for the purpose of studying known mechanisms in greater detail and searching for new physics. This experiment has recorded the data corresponding to the total integrated luminosity of 196  $\rm{fb}^{-1}$ from 2010. For advancing the search in the field of energy frontier, High luminosity LHC (HL-LHC), the luminosity will be increased, will start in 2029. HL-LHC will record the data corresponding to the total integrated luminosity 3000  $\rm{fb}^{-1}$ for 10 years. Due to increasing the luminosity, the electronics installed close to the detector are required to have high radiation hardness. The frontend electronics of the Thin Gap Chamber (TGC), which is the endcap muon detector of the ATLAS experiments, are located about 10 m from the collision point. The radiation level of the frontend electronics are estimated 4.1 - 4.3  Gy for Total Ionizing Dose (TID), 1.1 - 2.2 $\times 10^{11}$ 1-MeV neutron equivalent flux for Non-Ionizing Energy Loss (NIEL). Frontend electronics have a lot of commercial electronic components. So the test of radiation hardness of these components, in which the radiation hardness is not obvious, is the key point for HL-LHC. This paper shows the results of TID and NIEL tests for Voltage references, SD cards, Operational Amplifiers, Clock jitter cleaners, QSPI flash memories, SFP+ transceivers, Optical fiber, and LDOs. For TID tests, we irradiated gamma rays up to O(1000)  Gy at the Cobalt-60 facility of Nagoya University. For NIEL tests, we irradiated neutrons up to O($10^{12}$)  $\rm{cm}^{-2}$ using Tandem Accelerator at Kobe University. As the results of these tests, we verified all irradiated commercial electronic components have enough radiation hardness in terms of use for TGC frontend electronics at HL-LHC.  
+\end{linenumbers}
+\end{abstract}
+
+%%Graphical abstract
+%\begin{graphicalabstract}
+%\includegraphics{grabs}
+%\end{graphicalabstract}
+
+%%Research highlights
+%\begin{highlights}
+%\item Research highlight 1
+%\item Research highlight 2
+%\end{highlights}
+
+%\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+%\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+%% main text
+\section{Introduction}
+\input{Introduction/Introduction}
+
+\section{Radiation level of frontend electronics for TGC}
+\input{RadiationLevel/RadiationLevel}
+
+\section{Targets and test method}
+\input{TargetsAndMethod/TargetsAndMethod}
+
+\section{TID test}
+\input{TID/TID}
+
+\section{NIEL test}
+\input{NIEL/NIEL}
+
+\section{Summary}
+\input{Summary/Summary}
+
+%\label{}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% If you have bibdatabase file and want bibtex to generate the
+%% bibitems, please use
+%%
+%%  \bibliographystyle{elsarticle-num} 
+%%  \bibliography{<your bibdatabase>}
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+
+%\begin{thebibliography}{00}
+
+%% \bibitem{label}
+%% Text of bibliographic item
+
+%\bibitem{}
+
+%\end{thebibliography}
+\end{document}
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.
